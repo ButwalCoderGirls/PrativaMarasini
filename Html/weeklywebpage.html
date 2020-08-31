@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+             crossorigin="anonymous">
+
+      <style>
+          
+  #section2{
+    display: inline-block;
+    background:bisque;
+    height:650px;
+    width:100%;
+  }
+  #section3{
+    display: inline-block;
+    background:antiquewhite;
+    height:300px;
+    width:100%;
+  }
+  #section4{
+    display: inline-block;
+    background:antiquewhite;
+    height:500px;
+    width:100%;
+  }
+  #section5{
+    display: inline-block;
+    background: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size:cover;
+    height:800px;
+    width:100%;
+  }
+  .section{
+	 padding: 40px;
+      position:absolute;
+      width: 50%;
+	    color: white;
+  }
+
+ h3{
+    text-align: center;
+    background:darkolivegreen;
+    color:cornsilk;
+  }
+table{
+    border-color:darkgoldenrod;
+      border-spacing:0;
+      display: inline-block;
+
+}
+p{
+    font-size:20px;
+    margin-left: 40px;
+    margin-right:40px;
+    text-justify: auto;
+}
+#section4 img{
+    margin-left:30px;
+    display: inline-block;
+    margin-top:10px;
+}
+nav a{
+    display:inline-block;
+    text-transform: uppercase;
+    font-size:18px;
+    line-height:40px ;
+}
+      </style>       
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">Daddy's kitchen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" >
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section4">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#section5">Contact Us</a>
+              </li>
+
+
+            </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control ml-sm-5" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-3 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="500px"alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"  height="500px" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"  height="500px" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="content">
+
+        
+        <div id="section2">
+            <h3> Menu</h3>
+
+            <table border="5px" style=" margin-left:40px; ">
+                       <thead>
+                        <tr>
+                            <th colspan=4>MOMOS</th>
+                        </tr>
+                            <tr>
+                                <th>S.N</th>
+                                <th>Items</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1.</td>
+                                <td>VEG STEAM</td>
+                                <td>100</td>
+                                
+                                <td rowspan="8">
+                                    <img src="https://image.shutterstock.com/image-photo/nepalese-traditional-dumpling-momos-steamed-260nw-1133804642.jpg" height="200px" width="180px" alt="Fruits">
+                                </td>
+                            </tr>
+                
+                            <tr>
+                                <td>2.</td>
+                                <td>CHICKEN STEAM</td>
+                                <td>120</td>
+                            </tr>
+                
+                            <tr>
+                                <td>3.</td>
+                                <td>VEG FRIED</td>
+                                <td>120</td>
+                            </tr>
+                
+                            <tr>
+                                <td>4.</td>
+                                <td>CHICKEN FRIED</td>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>CHICKEN CHILLY</td>
+                                <td>180</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>VEG CHILLY</td>
+                                <td>160</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>CHICKEN JHOL</td>
+                                <td>180</td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                </table>
+
+    
+            <table border="5px" style="margin-left:20px;">
+                       <thead>
+                           <tr>
+                               <th colspan=4>PIZZA</th>
+                           </tr>
+                            <tr>
+                                <th>S.N</th>
+                                <th>Items</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1.</td>
+                                <td>MAGARITA (SMALL-200)</td>
+                                <td>480</td>
+                                
+                                <td rowspan="6">
+                                    <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="180px" alt="Fruits">
+                                </td>
+                            </tr>
+                
+                            <tr>
+                                <td>2.</td>
+                                <td>MUSHROOM (Small- 220)</td>
+                                <td>570</td>
+                            </tr>
+                
+                            <tr>
+                                <td>3.</td>
+                                <td>SAUSAGE PIZZA(Small- 220)</td>
+                                <td>570</td>
+                            </tr>
+                
+                            <tr>
+                                <td>4.</td>
+                                <td>CHICKEN PIZZA (Small- 250)</td>
+                                <td>620</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>VEG PIZZA (Small- 220)</td>
+                                <td>480</td>
+                            </tr>
+                            
+                        </tbody>
+                </table>
+
+                <table border="5px" style="margin-left:20px; margin-top:20px">
+                    <thead>
+                        <tr>
+                            <th colspan=4 style="text-align:center;">ESPRESSO BASED DRINKS</th>
+                        </tr>
+                         <tr>
+                             <th>S.N</th>
+                             <th>Items</th>
+                             <th>Price</th>
+                             <th></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+
+                         <tr>
+                             <td>1.</td>
+                             <td>AMERICANOS</td>
+                             <td>110</td>
+                             
+                             <td rowspan="6">
+                                 <img src="https://images.unsplash.com/photo-1569097893724-974d2018a152?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="180px" alt="Fruits">
+                             </td>
+                         </tr>
+             
+                         <tr>
+                             <td>2.</td>
+                             <td>CAPPUCCHINO</td>
+                             <td>130</td>
+                         </tr>
+             
+                         <tr>
+                             <td>3.</td>
+                             <td>CAFE LATTE</td>
+                             <td>160</td>
+                         </tr>
+             
+                         <tr>
+                             <td>4.</td>
+                             <td>CAFE MOCHA</td>
+                             <td>180</td>
+                         </tr>
+                         <tr>
+                             <td>5.</td>
+                             <td>CARAMEL LATTE </td>
+                             <td>180</td>
+                         </tr>
+                         
+                     </tbody>
+             </table>
+
+
+                <table border="5px" style="margin-left:40px; margin-top:20px">
+                    <thead>
+                        <tr>
+                            <th colspan=4 style="text-align:center;">VEG APETIZER</th>
+                        </tr>
+                         <tr>
+                             <th>S.N</th>
+                             <th>Items</th>
+                             <th>Price</th>
+                             <th></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+
+                         <tr>
+                             <td>1.</td>
+                             <td>FRENCH FRIES</td>
+                             <td>120</td>
+                             
+                             <td rowspan="6">
+                                 <img src="https://media.istockphoto.com/photos/basket-of-famous-fast-food-french-fries-picture-id618214356" height="200px" width="180px" alt="Fruits">
+                             </td>
+                         </tr>
+             
+                         <tr>
+                             <td>2.</td>
+                             <td>CHIPS CHILLY</td>
+                             <td>160</td>
+                         </tr>
+             
+                         <tr>
+                             <td>3.</td>
+                             <td>AALOO SADHEKO</td>
+                             <td>120</td>
+                         </tr>
+             
+                         <tr>
+                             <td>4.</td>
+                             <td>WAI WAI SADHEKO</td>
+                             <td>100</td>
+                         </tr>
+                         <tr>
+                             <td>5.</td>
+                             <td>PASTA</td>
+                             <td>220</td>
+                         </tr>
+                         
+                     </tbody>
+             </table>
+
+             
+             <table border="5px" style="margin-left:20px; margin-top:20px">
+                <thead>
+                    <tr>
+                        <th colspan=4 style="text-align:center;">REFRESHNERS</th>
+                    </tr>
+                     <tr>
+                         <th>S.N</th>
+                         <th>Items</th>
+                         <th>Price</th>
+                         <th></th>
+                     </tr>
+                 </thead>
+                 <tbody>
+
+                     <tr>
+                         <td>1.</td>
+                         <td>VIRGIN MOJIT0 </td>
+                         <td>260</td>
+                         
+                         <td rowspan="6">
+                             <img src="https://images.unsplash.com/photo-1575596510825-f748919a2bf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="180px" alt="Fruits">
+                         </td>
+                     </tr>
+         
+                     <tr>
+                         <td>2.</td>
+                         <td>ICE LEMONADE</td>
+                         <td>160</td>
+                     </tr>
+         
+                     <tr>
+                         <td>3.</td>
+                         <td>BLUE OCEAN</td>
+                         <td>200</td>
+                     </tr>
+         
+                     <tr>
+                         <td>4.</td>
+                         <td>BLANDED LEMONADE</td>
+                         <td>160</td>
+                     </tr>
+                     <tr>
+                         <td>5.</td>
+                         <td>LEMON SPRITE</td>
+                         <td>80</td>
+                     </tr>
+                     
+                 </tbody>
+         </table>
+
+         <table border="5px" style="margin-left:20px; margin-top:20px">
+            <thead>
+                <tr>
+                    <th colspan=4 style="text-align:center;">COFFEE ALTERNATIVES</th>
+                </tr>
+                 <tr>
+                     <th>S.N</th>
+                     <th>Items</th>
+                     <th>Price</th>
+                     <th></th>
+                 </tr>
+             </thead>
+             <tbody>
+
+                 <tr>
+                     <td>1.</td>
+                     <td>MILK TEA</td>
+                     <td>50</td>
+                     
+                     <td rowspan="6">
+                         <img src="https://images.unsplash.com/photo-1588329955273-2a615fde5913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"height="200px" width="180px" alt="Fruits">
+                     </td>
+                 </tr>
+     
+                 <tr>
+                     <td>2.</td>
+                     <td>BLACK TEA</td>
+                     <td>40</td>
+                 </tr>
+     
+                 <tr>
+                     <td>3.</td>
+                     <td>LEMON TEA</td>
+                     <td>50</td>
+                 </tr>
+     
+                 <tr>
+                     <td>4.</td>
+                     <td>HOT CHOCOLATE</td>
+                     <td>160</td>
+                 </tr>
+                 <tr>
+                     <td>5.</td>
+                     <td>GREEN TEA</td>
+                     <td>120</td>
+                 </tr>
+                 
+             </tbody>
+     </table>
+
+
+            </div>
+
+          <div id="section3">
+            <h3>About Us</h3>
+            <div class="content">
+                <p>Daddy’s kitchen was established at the year 2013 from Butwal with the motto of serving people with best food and generating employment for young people within the Nation with slogan of “कायापलट ल्याउन्छौ स्वदेशमै,युवा उध्यमिसलताको सम्मान गरौ|” It is also one of the first “Food-Truck Chain” in Nepal. We are almost successful in satisfying consumers with our surpassing food. 
+                    We have got outlets in different cities with best locations. We have got different forms of outlets such as: 
+                    <ul style="margin-left: 40px; font-size:20px">
+                        <li>Food-Truck </li>
+                        <li>Food-Trailer</li>
+                        <li>Food-Court</li>
+                        <li>Cafe and Restaurant.</li>
+                    </ul>
+                </p>
+            </div>
+          </div>
+          <div id="section4">
+            <h3>Gallery</h3>
+           
+            <img src="https://images.unsplash.com/photo-1553527922-767df645c5f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image1">
+            
+            <img src="https://images.unsplash.com/photo-1582970552008-ac972035ba25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image2">
+            <img src="https://images.unsplash.com/photo-1568604004332-f4da0683165f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image3">
+            <img src="https://images.unsplash.com/flagged/photo-1570073159477-6440e770da2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image4">
+            <img src="https://images.unsplash.com/photo-1579578304186-f0626704bbd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image5">
+            <img src="https://images.unsplash.com/photo-1597564684442-b603ab8dcdcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image6">
+            <img src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image7">
+            <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height="200px" width="300px"alt="image8">
+            
+            <div id="section5">
+            <h3> Contact Us </h3>
+
+                <div class="section">
+
+
+            <form class="border border-light p-5">
+      
+                <fieldset>
+                  
+          
+                <label for="Name">Username</label>
+                <input type="text" id="defaultLoginFormName"  name="username" class="form-control mb-4"  placeholder="Enter your name" required>
+          
+                <label for="Email">Email address</label>
+                <input type="email" id="defaultLoginFormEmail" name="email" class="form-control mb-4" placeholder="Enter your E-mail" required>
+                
+                <label for="Phone">Phone</label>
+                <input type="tel" id="defaultLoginFormPhone"  name="phone" class="form-control mb-4"  placeholder="Enter your number" required>
+          
+                <label for="Name">Type of enquiry:</label><br>
+                <input type="radio" name="enquiry" id="enquiry" value="Feedback"> Feedback<br>
+                <input type="radio" name="enquiry" id="enquiry" value="Business">Business<br>
+                <input type="radio" name="enquiry" id="enquiry" value="Charity">Charity<br><br>
+          
+                <label for="message">Any suggestions:</label>
+          
+          <textarea id="message" name="message" rows="4" cols="50">
+            </textarea>
+            
+                <button class="btn btn-info btn-block my-4" type="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+          </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
