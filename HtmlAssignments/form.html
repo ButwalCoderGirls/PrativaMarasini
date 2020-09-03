@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+  <style>
+    body{
+  background: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size:cover;
+
+    }
+    .container {
+      display:flexbox;
+	    padding: 40px;
+      position:relative;
+      width: 40%;
+	    color: white;
+    }
+      h3{
+    height:40px;
+    width:100%;
+    color:salmon;
+    font-family: cursive;
+    font-size:35px;
+     }     
+
+     #submit:hover{
+              	background-color:darksalmon;
+              }
+
+  </style>
+
+<body>
+  <div class="container">
+    <h3>Registration Form:</h3>
+
+    <form class="border border-light p-5">
+      
+      <fieldset>
+        <legend>User details:</legend>
+
+      <label for="Name">Username</label>
+      <input type="text" id="defaultLoginFormName"  name="username" class="form-control mb-4"  placeholder="Enter your name" required>
+
+      <label for="Email">Email address</label>
+      <input type="email" id="defaultLoginFormEmail" name="email" class="form-control mb-4" placeholder="Enter your E-mail" required>
+  
+      <label for="Password">Password</label>
+      <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder=" Enter your Password" required>
+      
+      <label for="Phone">Phone</label>
+      <input type="tel" id="defaultLoginFormPhone"  name="phone" class="form-control mb-4"  placeholder="Enter your number" required>
+
+      <label for="Name">Gender:</label>
+      <input type="radio" name="gender" id="gender" value="male"> Male
+      <input type="radio" name="gender" id="gender" value="female"> Female
+      <input type="radio" name="gender" id="gender" value="other"> Other<br>
+
+      <label for="birthday">Date Of Birth:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+
+      <label for="College" class="college">College:</label>
+      <select name="college" id="dropdown" required>
+        <option value="select">Select your college</option>
+      <option value="bmc">BMC</option>
+      <option value="tinau">Tinau</option>
+      <option value="nepathya">Nepathya</option>
+			</select><br><br>
+
+      <label for="skills">Web Skills:</label><br>
+      <input type="checkbox" id="web development" name="web development" value="HTML">
+      <label for="Web development">HTML</label>
+      <input type="checkbox" id="web development" name="web development" value="CSS">
+      <label for="web development"> CSS</label>
+      <input type="checkbox" id="web development" name="web development" value="Bootstrap">
+      <label for="web development"> Bootstrap</label>
+      <input type="checkbox" id="web development" name="web development" value="PHP">
+      <label for="web development">PHP</label><br>
+
+      <label for="message">Message:</label>
+
+<textarea id="message" name="message" rows="4" cols="50">
+  </textarea>
+  
+      <button class="btn btn-info btn-block my-4" type="submit" id="submit">Submit</button>
+      </fieldset>
+  </form>
+</div>
+</body>
+</html>
